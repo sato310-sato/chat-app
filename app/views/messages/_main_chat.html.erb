@@ -15,7 +15,7 @@
 <div class="messages">
 <%= render partial: 'message', collection: @messages %>
 
-</div
+</div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
   <div class="form-input">
@@ -25,5 +25,5 @@
       <%= f.file_field :image, class: 'hidden' %>
     </label>
   </div>
-   <%= f.submit '送信', class: 'form-submit' %>
+  <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
